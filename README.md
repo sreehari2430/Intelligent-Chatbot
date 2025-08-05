@@ -21,3 +21,54 @@ A conversational AI chatbot app built with Streamlit, leveraging Google's Gemini
 
 ### 1. Clone the Repository
 
+
+### 2. Install Dependencies
+
+It's recommended to use a virtual environment.
+
+
+### 3. Set up API Key
+
+Create a `secret.py` file in the root directory with your Google API key:
+
+
+### 3. Set up API Key
+
+Create a `secret.py` file in the root directory with your Google API key:
+
+
+### 4. Run the App
+
+
+## Usage
+
+- **Choose Mode:** Use the sidebar to select between "Normal Chat" and "RAG-Based Chat".
+- **Upload Document:** In "RAG-Based Chat" mode, upload a `.txt` file. The app will process the file for document-based Q&A.
+- **Chat:** Type your questions in the chat input and receive contextually relevant answers.
+
+## Example Screenshot
+
+![Chatbot UI Screenshot](screenshot.png)
+
+## Folder Structure
+
+.
+├── app.py
+├── requirements.txt
+├── secret.py
+└── chroma_db/
+
+
+## Notes
+
+- Only `.txt` documents are currently supported for upload in RAG mode.
+- Make sure your Google API key has access to Gemini and Generative AI features.
+- Document vectors are persisted in the `chroma_db` directory.
+
+## License
+
+MIT License
+
+---
+
+Feel free to customize this README with more screenshots, project badges, or a features roadmap!
